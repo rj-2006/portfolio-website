@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Hello, I'm <span class="highlight">Rahul Joshi.</span></h1>
+            <p class="subtitle">Full Stack Developer</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a passionate developer who loves creating beautiful and functional websites. With expertise in modern web technologies, I bring ideas to life through clean and efficient code.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    <button class="nav-arrow prev-arrow" aria-label="Previous project">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="projects-grid">
+                        <div class="project-card" data-index="0">
+                            <h3>Weather Forecasting</h3>
+                            <p>API Integrated Weather Forecasting Application.</p>
+                            <div class="project-links">
+                                <a href="#" class="button">View Project</a>
+                                <a href="#" class="button">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-card" data-index="1">
+                            <h3>Task Manager</h3>
+                            <p>Task Management Application.</p>
+                            <div class="project-links">
+                                <a href="#" class="button">View Project</a>
+                                <a href="#" class="button">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-card" data-index="2">
+                            <h3>Project 3</h3>
+                            <p>Add Description</p>
+                            <div class="project-links">
+                                <a href="#" class="button">View Project</a>
+                                <a href="#" class="button">GitHub</a>
+                            </div>
+                        </div>
+                        <!-- Add more project cards as needed -->
+                    </div>
+                    <button class="nav-arrow next-arrow" aria-label="Next project">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="pagination-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="button">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://github.com/yourusername" class="button">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" class="button">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rahuk3tu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
