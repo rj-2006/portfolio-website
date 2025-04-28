@@ -111,4 +111,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize
     updateProjectView(0);
+
+    // Modal functionality
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.modal-close');
+    const projectImages = document.querySelectorAll('.project-image img');
+
+    projectImages.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.classList.add('show');
+            modalImg.src = this.src;
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+
+    // Close modal when clicking the close button
+    closeBtn.addEventListener('click', closeModal);
+
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            closeModal();
+        }
+    });
+
+    function closeModal() {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
 });

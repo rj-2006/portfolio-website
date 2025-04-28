@@ -45,31 +45,38 @@
                         <i class="fas fa-chevron-left"></i>
                     </button>
                     <div class="projects-grid">
+                        <!-- Project 1 -->
                         <div class="project-card" data-index="0">
-                            <h3>Weather Forecasting</h3>
-                            <p>API Integrated Weather Forecasting Application.</p>
-                            <div class="project-links">
-                                <a href="#" class="button">View Project</a>
-                                <a href="#" class="button">GitHub</a>
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <h3>Text Editor</h3>
+                                    <p>API Integrated Text Editor Application.</p>
+                                    <div class="project-links">
+                                        <a href="#" class="button">GitHub</a>
+                                    </div>
+                                </div>
+                                <div class="project-image">
+                                    <img src="images/editor.png" alt="Text Editor Project">
+                                </div>
                             </div>
                         </div>
+                        
+                        <!-- Project 2 -->
                         <div class="project-card" data-index="1">
-                            <h3>Task Manager</h3>
-                            <p>Task Management Application.</p>
-                            <div class="project-links">
-                                <a href="#" class="button">View Project</a>
-                                <a href="#" class="button">GitHub</a>
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <h3>MERN Netflix-Clone</h3>
+                                    <p>Netflix-Clone</p>
+                                    <div class="project-links">
+                                        <a href="#" class="button">View Project</a>
+                                        <a href="#" class="button">GitHub</a>
+                                    </div>
+                                </div>
+                                <div class="project-image">
+                                    <img src="images/clone.png" alt="Netflix-Clone">
+                                </div>
                             </div>
                         </div>
-                        <div class="project-card" data-index="2">
-                            <h3>Project 3</h3>
-                            <p>Add Description</p>
-                            <div class="project-links">
-                                <a href="#" class="button">View Project</a>
-                                <a href="#" class="button">GitHub</a>
-                            </div>
-                        </div>
-                        <!-- Add more project cards as needed -->
                     </div>
                     <button class="nav-arrow next-arrow" aria-label="Next project">
                         <i class="fas fa-chevron-right"></i>
@@ -87,13 +94,13 @@
             <div class="container">
                 <h2>Get In Touch</h2>
                 <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="button">
+                    <a href="mailto:rahuljoshi190114@gmail.com" class="button">
                         <i class="fas fa-envelope"></i> Email Me
                     </a>
-                    <a href="https://github.com/yourusername" class="button">
+                    <a href="https://github.com/rj-2006" class="button">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="https://linkedin.com/in/yourusername" class="button">
+                    <a href="https://linkedin.com/in/rahul-joshi-6a0526278/" class="button">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
@@ -106,6 +113,12 @@
             <p>&copy; 2025 Rahuk3tu. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <script src="script.js"></script>
 </body>
