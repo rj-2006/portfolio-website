@@ -7,6 +7,7 @@ import {
 export function TerminalDemo() {
   return (
  <Terminal>
+  <AnimatedSpan>
   <TypingAnimation>&gt; neofetch rahul.joshi --about</TypingAnimation>
 
   <AnimatedSpan delay={1500} className="text-green-500">
@@ -48,6 +49,10 @@ export function TerminalDemo() {
   <TypingAnimation delay={6000} className="text-muted-foreground">
     Success! Personality matrix loaded.
   </TypingAnimation>
+  </AnimatedSpan>
+  
+  <AnimatedSpan> </AnimatedSpan>
+  
 </Terminal>
 
 
