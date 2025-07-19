@@ -8,15 +8,15 @@ import {
 } from "@/components/magicui/terminal";
 import {TerminalDemo} from "./components/neofetch";
 import {IconCloudDemo} from "./components/cloud";
-
+import {FloatingNavDemo} from "./components/nvbar";
 
 const App = () => {
   return (
-    <div className="relative w-full">
-      <div className="fixed inset-0 -z-10 bg-white/30 background-blur-md">
+    <div className="absolute w-full">
+      <div className="fixed inset-0 -z-10 h-screen bg-white/30 background-blur-md">
         <AnimatedGridPatternDemo />
       </div>
-      {/* Remove absolute positioning and place TerminalDemo in the flow */}
+      <FloatingNavDemo />
       <div className="mt-32 flex justify between px-8">
         <div>
           <TerminalDemo />
