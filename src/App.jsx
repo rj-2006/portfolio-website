@@ -9,6 +9,7 @@ import {
 import {TerminalDemo} from "./components/neofetch";
 import {IconCloudDemo} from "./components/cloud";
 import {FloatingNavDemo} from "./components/nvbar";
+import {TextHoverEffectDemo} from "./components/ketuverse";
 
 const App = () => {
   return (
@@ -17,11 +18,13 @@ const App = () => {
         <AnimatedGridPatternDemo />
       </div>
       <FloatingNavDemo />
-      <div className="mt-32 flex justify between px-8">
-        <div>
+
+      <TextHoverEffectDemo/>
+      <div className="relative flex top-18 justify between  px-8">
+        <div class="ml-25">
           <TerminalDemo />
         </div>
-        <div class = " ml-35">
+        <div class = "ml-35">
           <IconCloudDemo />
         </div>
       </div>
