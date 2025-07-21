@@ -10,6 +10,7 @@ import {TerminalDemo} from "./components/neofetch";
 import {IconCloudDemo} from "./components/cloud";
 import {FloatingNavDemo} from "./components/nvbar";
 import {TextHoverEffectDemo} from "./components/ketuverse";
+import {About, BentoDemo} from "./components/about";
 
 const App = () => {
   return (
@@ -27,7 +28,13 @@ const App = () => {
         <div class = "ml-35">
           <IconCloudDemo />
         </div>
+      </div> 
+       <div className="max-w-80px l-35 mr-15 mt-40 mx-auto px-8">
+        <About/>
       </div>
+      <div className="w-full max-w-4xl max-h-xl mt-12 px-4 ml-16">
+        <BentoDemo/>
+      </div> 
     </div>
   );
 };
